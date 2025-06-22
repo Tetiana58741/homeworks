@@ -1,27 +1,36 @@
-// Создание объекта person1
+
 let person1 = { name: "Alice", age: 25 };
 
-// Глубокая копия объекта с добавлением свойства favoriteColor
+
 let person2 = JSON.parse(JSON.stringify(person1));
 person2.favoriteColor = "blue";
 
-// Проверка, что оригинал не изменился
+
 console.log("Original:", person1);
 console.log("Copy:", person2);
 
 /*
-6. Когда использовать объект?
-🟢 Используй объект, когда нужно хранить **связанные по смыслу данные в формате ключ-значение**.
-Пример: информация о человеке, товаре, пользователе и т.д.
+6. When should you use an object?
+ Use an object when you need to store **related data in key-value format**.
+Example: information about a person, product, user, etc.
 
-7. Когда использовать массив?
-🟢 Используй массив, когда нужно хранить **упорядоченный список элементов**, например: список имён, чисел, задач и т.п.
+7. When should you use an array?
+ Use an array when you need to store **an ordered list of elements**, such as a list of names, numbers, tasks, etc.
 */
 
-// 8. Функция с двумя аргументами
 function introduce(name, favoriteHobby) {
     console.log(`My name is ${name} and my favorite hobby is ${favoriteHobby}`);
 }
 
-// Пример вызова функции
 introduce("Alice", "painting");
+
+/*
+ JS:
+1. string — "Hello"
+2. number — 42
+3. boolean — true / false
+4. null — null
+5. undefined — undefined
+6. bigint — 123n
+7. symbol — Symbol("id")
+*/
