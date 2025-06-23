@@ -142,14 +142,14 @@ function demonstrateScope() {
   const localMessage = "I'm a local variable";
 
   console.log("Inside function:");
-  console.log(globalMessage); // ✅ accessible
-  console.log(localMessage);  // ✅ accessible
+  console.log(globalMessage);
+  console.log(localMessage); 
 }
 
 demonstrateScope();
 
 console.log("Outside function:");
-console.log(globalMessage); // ✅ still accessible
+console.log(globalMessage); // 
 // =========================================
 
 // =========================================
@@ -197,9 +197,9 @@ function calculate(a, b, operation) {
 }
 
 // Call with different operations
-calculate(10, 5, add);       // ➜ 15
-calculate(10, 5, subtract);  // ➜ 5
-calculate(10, 5, multiply);  // ➜ 50
+calculate(10, 5, add);       // 15
+calculate(10, 5, subtract);  // 5
+calculate(10, 5, multiply);  // 50
 // =========================================
 
 // =========================================
